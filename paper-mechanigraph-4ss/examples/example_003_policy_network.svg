@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#000000"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="600" fill="#ffffff" />
+
+  <!-- Outer Border (Symmetric 40px margin all around: Left 40, Right 40, Top 40, Bottom 40) -->
+  <rect x="40" y="40" width="820" height="520" rx="8" fill="none" stroke="#000000" stroke-width="1.8" />
+
+  <!-- Center Policy Core -->
+  <ellipse cx="450" cy="300" rx="100" ry="55" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-dasharray="6 4" />
+  <text x="450" y="306" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000" text-anchor="middle">“混改”政策</text>
+
+  <!-- Node 1: Top (府际网络 / 地方政府) cx=450, cy=110 -->
+  <g transform="translate(450, 110)">
+    <ellipse cx="0" cy="0" rx="110" ry="50" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+    <text x="0" y="-6" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#000000" text-anchor="middle">府际网络</text>
+    <text x="0" y="20" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">地方政府</text>
+  </g>
+
+  <!-- Node 2: Top-Left (生产者网络) cx=180, cy=220 -->
+  <g transform="translate(180, 220)">
+    <ellipse cx="0" cy="0" rx="110" ry="50" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+    <text x="0" y="-6" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#000000" text-anchor="middle">生产者网络</text>
+    <text x="0" y="20" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">高校、科研院所</text>
+  </g>
+
+  <!-- Node 3: Top-Right (专业网络) cx=720, cy=220 -->
+  <g transform="translate(720, 220)">
+    <ellipse cx="0" cy="0" rx="110" ry="50" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+    <text x="0" y="-6" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#000000" text-anchor="middle">专业网络</text>
+    <text x="0" y="20" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">评估专家、科技中介</text>
+  </g>
+
+  <!-- Node 4: Bottom-Left (推进网络) cx=280, cy=460 -->
+  <g transform="translate(280, 460)">
+    <ellipse cx="0" cy="0" rx="110" ry="50" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+    <text x="0" y="-6" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#000000" text-anchor="middle">推进网络</text>
+    <text x="0" y="20" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">技术转移公司</text>
+  </g>
+
+  <!-- Node 5: Bottom-Right (利益网络) cx=620, cy=460 -->
+  <g transform="translate(620, 460)">
+    <ellipse cx="0" cy="0" rx="110" ry="50" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+    <text x="0" y="-6" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#000000" text-anchor="middle">利益网络</text>
+    <text x="0" y="20" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">科研人员、企业主体</text>
+  </g>
+
+  <!-- Polygon Connections -->
+  <line x1="340" y1="110" x2="260" y2="180" stroke="#000000" stroke-width="1.5" />
+  <line x1="560" y1="110" x2="640" y2="180" stroke="#000000" stroke-width="1.5" />
+  <line x1="180" y1="270" x2="250" y2="415" stroke="#000000" stroke-width="1.5" />
+  <line x1="720" y1="270" x2="650" y2="415" stroke="#000000" stroke-width="1.5" />
+  <line x1="390" y1="460" x2="510" y2="460" stroke="#000000" stroke-width="1.5" />
+
+  <!-- Center Rays -->
+  <line x1="450" y1="160" x2="450" y2="245" stroke="#000000" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow)" />
+  <line x1="270" y1="245" x2="365" y2="280" stroke="#000000" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow)" />
+  <line x1="630" y1="245" x2="535" y2="280" stroke="#000000" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow)" />
+  <line x1="340" y1="420" x2="400" y2="345" stroke="#000000" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow)" />
+  <line x1="560" y1="420" x2="500" y2="345" stroke="#000000" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow)" />
+
+</svg>

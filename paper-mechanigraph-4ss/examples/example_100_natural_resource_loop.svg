@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#000000"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="600" fill="#ffffff" />
+
+  <!-- Outer Frame (Symmetric 40px margin all around: Left 40, Right 40, Top 40, Bottom 40) -->
+  <rect x="40" y="40" width="820" height="520" rx="8" fill="none" stroke="#000000" stroke-width="1.8" />
+
+  <!-- Center Core Node (450, 300) - Double Border Emphasis, SimHei 22px -->
+  <circle cx="450" cy="300" r="90" fill="#ffffff" stroke="#000000" stroke-width="2.8" />
+  <circle cx="450" cy="300" r="82" fill="none" stroke="#000000" stroke-width="1" stroke-dasharray="4 3" />
+  <text x="450" y="295" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="22" fill="#000000" text-anchor="middle">自然资源</text>
+  <text x="450" y="325" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="22" fill="#000000" text-anchor="middle">组合供应</text>
+
+  <!-- Satellite 1: Top (450, 100) -->
+  <g transform="translate(450, 100)">
+    <rect x="-95" y="-40" width="190" height="80" rx="6" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+    <text x="0" y="-6" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#000000" text-anchor="middle">资源调查确权</text>
+    <text x="0" y="22" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="14" font-weight="bold" fill="#000000" text-anchor="middle">资产清查与核算</text>
+  </g>
+
+  <!-- Satellite 2: Right (730, 300) -->
+  <g transform="translate(730, 300)">
+    <rect x="-95" y="-40" width="190" height="80" rx="6" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+    <text x="0" y="-6" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#000000" text-anchor="middle">规划用途管制</text>
+    <text x="0" y="22" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="14" font-weight="bold" fill="#000000" text-anchor="middle">空间分区与指标</text>
+  </g>
+
+  <!-- Satellite 3: Bottom (450, 500) -->
+  <g transform="translate(450, 500)">
+    <rect x="-95" y="-40" width="190" height="80" rx="6" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+    <text x="0" y="-6" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#000000" text-anchor="middle">生态保护修复</text>
+    <text x="0" y="22" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="14" font-weight="bold" fill="#000000" text-anchor="middle">系统保护与补偿</text>
+  </g>
+
+  <!-- Satellite 4: Left (170, 300) -->
+  <g transform="translate(170, 300)">
+    <rect x="-95" y="-40" width="190" height="80" rx="6" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+    <text x="0" y="-6" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#000000" text-anchor="middle">多元市场交易</text>
+    <text x="0" y="22" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="14" font-weight="bold" fill="#000000" text-anchor="middle">权益转让与入市</text>
+  </g>
+
+  <!-- Outer Closed-Loop Circular Arrows (Clockwise) -->
+  <!-- Top to Right -->
+  <path d="M 555 100 Q 730 100 730 245" fill="none" stroke="#000000" stroke-width="2" marker-end="url(#arrow)" />
+  <!-- Right to Bottom -->
+  <path d="M 730 355 Q 730 500 555 500" fill="none" stroke="#000000" stroke-width="2" marker-end="url(#arrow)" />
+  <!-- Bottom to Left -->
+  <path d="M 345 500 Q 170 500 170 355" fill="none" stroke="#000000" stroke-width="2" marker-end="url(#arrow)" />
+  <!-- Left to Top -->
+  <path d="M 170 245 Q 170 100 345 100" fill="none" stroke="#000000" stroke-width="2" marker-end="url(#arrow)" />
+
+</svg>

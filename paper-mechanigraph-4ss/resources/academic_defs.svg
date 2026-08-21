@@ -1,0 +1,21 @@
+<defs>
+  <!-- Standard Solid Black Arrow (Primary Causal Flow) -->
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#000000"/>
+  </marker>
+
+  <!-- Standard Gray Arrow (Secondary Flow & Feedback Loops) -->
+  <marker id="arrow-gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#666666"/>
+  </marker>
+
+  <!-- Hollow Arrow (Phase Transition) -->
+  <marker id="arrow-hollow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+  </marker>
+
+  <!-- Bidirectional Marker -->
+  <marker id="arrow-bidirectional" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+    <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#000000"/>
+  </marker>
+</defs>

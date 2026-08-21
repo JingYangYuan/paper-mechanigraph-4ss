@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#000000"/>
+    </marker>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="900" height="600" fill="#ffffff" />
+
+  <!-- Outer Frame (Symmetric 40px margin all around: Left 40, Right 40, Top 40, Bottom 40) -->
+  <rect x="40" y="40" width="820" height="520" rx="8" fill="none" stroke="#000000" stroke-width="1.8" />
+
+  <!-- Center Core Node (Emphasized: SimHei 22px, regular weight, double border) -->
+  <ellipse cx="450" cy="300" rx="125" ry="70" fill="#ffffff" stroke="#000000" stroke-width="2.8" />
+  <ellipse cx="450" cy="300" rx="117" ry="62" fill="none" stroke="#000000" stroke-width="1" stroke-dasharray="4 3" />
+  <text x="450" y="295" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="22" fill="#000000" text-anchor="middle">职务科技成果</text>
+  <text x="450" y="325" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="22" fill="#000000" text-anchor="middle">赋权改革</text>
+
+  <!-- Top Force: 顶层牵引力 (x=350, y=70, w=200, h=90) -->
+  <g transform="translate(350, 70)">
+    <rect width="200" height="90" rx="6" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+    <text x="100" y="40" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000" text-anchor="middle">顶层牵引力</text>
+    <text x="100" y="68" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle">（政治势能）</text>
+  </g>
+  <!-- Top Arrow -->
+  <line x1="450" y1="160" x2="450" y2="225" stroke="#000000" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- Bottom Force: 底层助推力 (x=350, y=440, w=200, h=90) -->
+  <g transform="translate(350, 440)">
+    <rect width="200" height="90" rx="6" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+    <text x="100" y="40" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000" text-anchor="middle">底层助推力</text>
+    <text x="100" y="68" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle">（地方创新）</text>
+  </g>
+  <!-- Bottom Arrow -->
+  <line x1="450" y1="440" x2="450" y2="375" stroke="#000000" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- Left Force: 内部驱动力 (x=70, y=255, w=200, h=90) -->
+  <g transform="translate(70, 255)">
+    <rect width="200" height="90" rx="6" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+    <text x="100" y="40" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000" text-anchor="middle">内部驱动力</text>
+    <text x="100" y="68" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle">（成果转化难）</text>
+  </g>
+  <!-- Left Arrow -->
+  <line x1="270" y1="300" x2="320" y2="300" stroke="#000000" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- Right Force: 外部拉动力 (x=630, y=255, w=200, h=90) -->
+  <g transform="translate(630, 255)">
+    <rect width="200" height="90" rx="6" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+    <text x="100" y="40" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000" text-anchor="middle">外部拉动力</text>
+    <text x="100" y="68" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="16" font-weight="bold" fill="#000000" text-anchor="middle">（经济社会发展）</text>
+  </g>
+  <!-- Right Arrow -->
+  <line x1="630" y1="300" x2="580" y2="300" stroke="#000000" stroke-width="2" marker-end="url(#arrow)" />
+
+</svg>

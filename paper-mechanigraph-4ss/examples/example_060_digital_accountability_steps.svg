@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#000000"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="600" fill="#ffffff" />
+
+  <!-- Outer Frame (Symmetric 40px margin all around: Left 40, Right 40, Top 40, Bottom 40) -->
+  <rect x="40" y="40" width="820" height="520" rx="8" fill="none" stroke="#000000" stroke-width="1.8" />
+
+  <!-- Coordinate Axes (Origin: 150, 500) -->
+  <!-- Y Axis: 归责效能 / 治理深度 (Emphasized by font-size 18, SimHei regular, not bold) -->
+  <line x1="150" y1="500" x2="150" y2="100" stroke="#000000" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="150" y="80" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#000000" text-anchor="middle">归责效能 / 治理深度</text>
+
+  <!-- X Axis: 数字化演进阶段 -->
+  <line x1="150" y1="500" x2="810" y2="500" stroke="#000000" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="730" y="535" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#000000" text-anchor="middle">数字化演进阶段</text>
+
+  <!-- High-Clearance S-Curve (y: 110 ~ 75) -->
+  <path d="M 220 340 C 330 310, 380 180, 500 150 S 680 100, 790 75" fill="none" stroke="#000000" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrow)" />
+  <!-- Curve Label: Non-emphasized description using Bold FangSong font, clean 35px clearance -->
+  <text x="500" y="115" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">演进跨越趋势 (S-Curve)</text>
+
+  <!-- Step 1: 电子化 (x=180, y=380, w=160, h=80) -->
+  <g transform="translate(180, 380)">
+    <rect width="160" height="80" rx="6" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+    <text x="80" y="34" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000" text-anchor="middle">阶段一：电子化</text>
+    <text x="80" y="60" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">数据归集与留痕</text>
+  </g>
+
+  <!-- Step-to-Step Orthogonal Arrow 1 -> 2 -->
+  <path d="M 340 420 L 365 420 L 365 315 L 380 315" fill="none" stroke="#000000" stroke-width="1.8" marker-end="url(#arrow)" />
+
+  <!-- Step 2: 平台化 (x=385, y=275, w=160, h=80) -->
+  <g transform="translate(385, 275)">
+    <rect width="160" height="80" rx="6" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+    <text x="80" y="34" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000" text-anchor="middle">阶段二：平台化</text>
+    <text x="80" y="60" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">流程贯通与协同</text>
+  </g>
+
+  <!-- Step-to-Step Orthogonal Arrow 2 -> 3 -->
+  <path d="M 555 315 L 570 315 L 570 210 L 585 210" fill="none" stroke="#000000" stroke-width="1.8" marker-end="url(#arrow)" />
+
+  <!-- Step 3: 智能化 (x=590, y=170, w=160, h=80) -->
+  <g transform="translate(590, 170)">
+    <rect width="160" height="80" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2.8" />
+    <text x="80" y="34" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000" text-anchor="middle">阶段三：智能化</text>
+    <text x="80" y="60" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">算法归责与预测</text>
+  </g>
+
+</svg>

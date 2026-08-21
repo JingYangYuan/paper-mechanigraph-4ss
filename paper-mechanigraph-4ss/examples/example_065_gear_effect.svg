@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#000000"/>
+    </marker>
+  </defs>
+
+  <!-- Absolute Canvas Background (900x600) -->
+  <rect width="900" height="600" fill="#ffffff" />
+
+  <!-- Outer Frame (Symmetric 40px margin all around: Left 40, Right 40, Top 40, Bottom 40) -->
+  <rect x="40" y="40" width="820" height="520" rx="8" fill="none" stroke="#000000" stroke-width="1.8" />
+
+  <!-- Gear 1 (Left - 政策驱动齿轮) Center: (240, 300) -->
+  <g transform="translate(240, 300)">
+    <!-- Outer Dashed Orbit (r=135) -->
+    <circle cx="0" cy="0" r="135" fill="#ffffff" stroke="#000000" stroke-width="1.8" stroke-dasharray="8 5" />
+    <!-- Inner Main Node (r=95, double border emphasis) -->
+    <circle cx="0" cy="0" r="95" fill="#ffffff" stroke="#000000" stroke-width="2.5" />
+    <!-- Emphasized Title: SimHei 22px, regular weight -->
+    <text x="0" y="-8" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="22" fill="#000000" text-anchor="middle">政府政策</text>
+    <!-- Secondary text: Bold FangSong 15px -->
+    <text x="0" y="26" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">顶层制度供给</text>
+    <!-- Graceful Outer Orbit Rotation Arrow (r=115, well clear of inner node) -->
+    <path d="M -80 -80 A 115 115 0 0 1 80 -80" fill="none" stroke="#000000" stroke-width="2" marker-end="url(#arrow)" />
+  </g>
+
+  <!-- Left Connector Arrow: Gear 1 right edge (x=375) to Center Box left edge (x=395) -->
+  <line x1="375" y1="300" x2="395" y2="300" stroke="#000000" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- Transmission Coupling (Center Node) Center: (450, 300), Width: 110, Height: 76 -->
+  <g transform="translate(450, 300)">
+    <rect x="-55" y="-38" width="110" height="76" rx="6" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+    <text x="0" y="6" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="18" fill="#000000" text-anchor="middle">啮合传导</text>
+  </g>
+
+  <!-- Right Connector Arrow: Center Box right edge (x=505) to Gear 2 left edge (x=525) -->
+  <line x1="505" y1="300" x2="525" y2="300" stroke="#000000" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- Gear 2 (Right - 市场响应齿轮) Center: (660, 300) -->
+  <g transform="translate(660, 300)">
+    <!-- Outer Dashed Orbit (r=135) -->
+    <circle cx="0" cy="0" r="135" fill="#ffffff" stroke="#000000" stroke-width="1.8" stroke-dasharray="8 5" />
+    <!-- Inner Main Node (r=95, double border emphasis) -->
+    <circle cx="0" cy="0" r="95" fill="#ffffff" stroke="#000000" stroke-width="2.5" />
+    <!-- Emphasized Title: SimHei 22px, regular weight -->
+    <text x="0" y="-8" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="22" fill="#000000" text-anchor="middle">产业市场</text>
+    <!-- Secondary text: Bold FangSong 15px -->
+    <text x="0" y="26" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">要素高效配置</text>
+    <!-- Counter Rotation Arrow (r=115, black arrow) -->
+    <path d="M 80 80 A 115 115 0 0 1 -80 80" fill="none" stroke="#000000" stroke-width="2" marker-end="url(#arrow)" />
+  </g>
+
+</svg>
