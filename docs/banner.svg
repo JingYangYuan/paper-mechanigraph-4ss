@@ -44,9 +44,9 @@
     <path d="M0 70h1280M0 140h1280M0 210h1280M0 280h1280M0 350h1280"/>
   </g>
 
-  <text x="88" y="88" fill="#38bdf8" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" font-weight="700" letter-spacing="4">PAPER MASTER 4SS · MECHANIGRAPH</text>
-  <text x="88" y="166" fill="#f8fafc" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="54" font-weight="800">paper<tspan fill="url(#title-grad)">-mechanigraph-4ss</tspan></text>
-  <text x="88" y="216" fill="#cbd5e1" font-family="ui-sans-serif, system-ui, PingFang SC, Microsoft YaHei, sans-serif" font-size="21">纯矢量学术机制图引擎 · 8大经典拓扑与视觉自检闭环</text>
+  <text x="88" y="90" fill="#38bdf8" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="700" letter-spacing="4">PAPER MASTER 4SS · MECHANIGRAPH</text>
+  <text x="88" y="160" fill="#f8fafc" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="42" font-weight="800">paper<tspan fill="url(#title-grad)">-mechanigraph-4ss</tspan></text>
+  <text x="88" y="210" fill="#cbd5e1" font-family="ui-sans-serif, system-ui, PingFang SC, Microsoft YaHei, sans-serif" font-size="19">纯矢量学术机制图引擎 · 8大经典拓扑与自检闭环</text>
 
   <g font-family="ui-sans-serif, system-ui, PingFang SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="600">
     <rect x="88" y="248" width="112" height="34" rx="17" fill="#082f49" stroke="#0ea5e9" stroke-opacity=".7"/>
@@ -67,7 +67,7 @@
   </g>
 
   <g font-family="ui-sans-serif, system-ui, PingFang SC, Microsoft YaHei, sans-serif">
-    <text x="88" y="332" fill="#94a3b8" font-size="14" font-weight="500">实体提取 → 构型匹配 → 纯矢量出图 → 视觉闭环自检</text>
+    <text x="88" y="330" fill="#94a3b8" font-size="14" font-weight="500">实体提取 → 构型匹配 → 纯矢量出图 → 视觉闭环自检</text>
     <rect x="88" y="348" width="536" height="12" rx="6" fill="#0f172a" stroke="#1e293b"/>
     <rect x="88" y="348" width="536" height="12" rx="6" fill="url(#progress-bar)"/>
   </g>

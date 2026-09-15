@@ -45,21 +45,20 @@
   <!-- Flow Arrow 3 -> 4 -->
   <line x1="280" y1="355" x2="280" y2="395" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)" />
 
-  <!-- Flow Step 4: 公示 (x=225, y=395, w=110, h=45) -->
-  <g transform="translate(225, 395)">
-    <rect width="110" height="45" rx="4" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
-    <text x="55" y="29" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="16" fill="#000000" text-anchor="middle">公示</text>
+  <!-- Flow Step 4: 公示 (x=235, y=395, w=90, h=45) -->
+  <g transform="translate(235, 395)">
+    <rect width="90" height="45" rx="4" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+    <text x="45" y="29" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="16" fill="#000000" text-anchor="middle">公示</text>
   </g>
 
-  <!-- Branch Left: 有异议 -> 单位核实处理 -->
-  <line x1="225" y1="417.5" x2="180" y2="417.5" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)" />
-  <text x="202" y="407" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="13" font-weight="bold" fill="#000000" text-anchor="middle">有异议</text>
-  <g transform="translate(95, 393)">
-    <rect width="85" height="50" rx="4" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
-    <text x="42.5" y="22" font-family="'SimHei', sans-serif" font-size="13" fill="#000000" text-anchor="middle">单位核实</text>
-    <text x="42.5" y="38" font-family="'SimHei', sans-serif" font-size="13" fill="#000000" text-anchor="middle">处理</text>
+  <!-- Branch Left: 有异议 -> 单位核实处理 (Gap is 70px: 165 to 235) -->
+  <line x1="235" y1="417.5" x2="170" y2="417.5" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)" />
+  <text x="200" y="407" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="13" font-weight="bold" fill="#000000" text-anchor="middle">有异议</text>
+  <g transform="translate(85, 393)">
+    <rect width="80" height="50" rx="4" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+    <text x="40" y="22" font-family="'SimHei', sans-serif" font-size="13" fill="#000000" text-anchor="middle">单位核实</text>
+    <text x="40" y="38" font-family="'SimHei', sans-serif" font-size="13" fill="#000000" text-anchor="middle">处理</text>
   </g>
-
   <!-- Branch Down: 无异议 -> 签订赋权协议 -->
   <line x1="280" y1="440" x2="280" y2="510" stroke="#000000" stroke-width="1.5" marker-end="url(#arrow)" />
   <text x="308" y="480" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="14" font-weight="bold" fill="#000000" text-anchor="middle">无异议</text>
@@ -123,41 +122,50 @@
   </g>
 
   <!-- Diagonal Flow: 生产者网络 -> 科研人员 (赋权激励) -->
-  <line x1="730" y1="365" x2="640" y2="470" stroke="#000000" stroke-width="1.8" marker-end="url(#arrow)" />
-  <text x="665" y="405" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">赋权激励</text>
+  <line x1="730" y1="365" x2="620" y2="470" stroke="#000000" stroke-width="1.8" marker-end="url(#arrow)" />
+  <text x="650" y="405" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">赋权激励</text>
 
   <!-- Diagonal Flow: 生产者网络 -> 专业网络 (合作推广) -->
-  <line x1="930" y1="365" x2="1020" y2="470" stroke="#000000" stroke-width="1.8" marker-end="url(#arrow)" />
-  <text x="995" y="405" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">合作推广</text>
+  <line x1="930" y1="365" x2="1040" y2="470" stroke="#000000" stroke-width="1.8" marker-end="url(#arrow)" />
+  <text x="1010" y="405" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">合作推广</text>
 
-  <!-- Center Vertical Flow: 生产者网络 -> 专业服务 / 创新成果 -->
-  <line x1="830" y1="390" x2="830" y2="465" stroke="#000000" stroke-width="1.8" marker-end="url(#arrow)" />
-  <text x="800" y="432" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="14" font-weight="bold" fill="#000000" text-anchor="end">成果</text>
-  <text x="860" y="432" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="14" font-weight="bold" fill="#000000" text-anchor="start">生产</text>
-
-  <!-- 4. Bottom-Left Node: 科研人员 (x=550, y=475, w=160, h=90) -->
-  <g transform="translate(550, 475)">
-    <rect width="160" height="90" rx="6" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
-    <text x="80" y="52" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000" text-anchor="middle">科研人员</text>
+  <!-- Center Node: 成果转化平台 (x=760, y=485, w=140, h=70) -->
+  <g transform="translate(760, 485)">
+    <rect width="140" height="70" rx="6" fill="#ffffff" stroke="#000000" stroke-width="2" />
+    <text x="70" y="32" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="16" fill="#000000" text-anchor="middle">成果转化平台</text>
+    <text x="70" y="54" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="13" font-weight="bold" fill="#000000" text-anchor="middle">服务与交易</text>
   </g>
 
-  <!-- Horizontal Interaction: 科研人员 -> 专业网络 (中介机构) -->
-  <line x1="710" y1="520" x2="945" y2="520" stroke="#000000" stroke-width="1.8" marker-end="url(#arrow)" />
-  <text x="830" y="502" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">专业服务</text>
-  <text x="830" y="545" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">创新成果</text>
+  <!-- Center Vertical Flow: 生产者网络 -> 成果转化平台 (Docked to top of platform) -->
+  <line x1="830" y1="390" x2="830" y2="480" stroke="#000000" stroke-width="1.8" marker-end="url(#arrow)" />
+  <text x="810" y="440" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="14" font-weight="bold" fill="#000000" text-anchor="end">成果</text>
+  <text x="850" y="440" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="14" font-weight="bold" fill="#000000" text-anchor="start">供给</text>
 
-  <!-- 5. Bottom-Right Node: 专业网络 (中介机构) (x=950, y=475, w=160, h=90) -->
-  <g transform="translate(950, 475)">
-    <rect width="160" height="90" rx="6" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
-    <text x="80" y="38" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000" text-anchor="middle">专业网络</text>
-    <text x="80" y="66" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">中介机构</text>
+  <!-- 4. Bottom-Left Node: 科研人员 (x=520, y=475, w=140, h=90) -->
+  <g transform="translate(520, 475)">
+    <rect width="140" height="90" rx="6" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+    <text x="70" y="52" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000" text-anchor="middle">科研人员</text>
   </g>
 
-  <!-- Bottom Vertical Flow: 议题网络 -> 创新成果 (资金支持) -->
+  <!-- Horizontal Interaction: 科研人员 -> 成果转化平台 (100px wide open corridor: 660 to 760) -->
+  <line x1="665" y1="520" x2="755" y2="520" stroke="#000000" stroke-width="1.8" marker-end="url(#arrow)" />
+  <text x="710" y="508" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="13" font-weight="bold" fill="#000000" text-anchor="middle">赋权入场</text>
+
+  <!-- Horizontal Interaction: 成果转化平台 -> 专业网络 (100px wide open corridor: 900 to 1000) -->
+  <line x1="905" y1="520" x2="995" y2="520" stroke="#000000" stroke-width="1.8" marker-end="url(#arrow)" />
+  <text x="950" y="508" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="13" font-weight="bold" fill="#000000" text-anchor="middle">专业中介</text>
+
+  <!-- 5. Bottom-Right Node: 专业网络 (中介机构) (x=1000, y=475, w=140, h=90) -->
+  <g transform="translate(1000, 475)">
+    <rect width="140" height="90" rx="6" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+    <text x="70" y="38" font-family="'SimHei', 'Heiti SC', 'Microsoft YaHei', sans-serif" font-size="20" fill="#000000" text-anchor="middle">专业网络</text>
+    <text x="70" y="66" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">中介机构</text>
+  </g>
+
+  <!-- Bottom Vertical Flow: 议题网络 -> 成果转化平台 (Docked to bottom of platform) -->
   <line x1="830" y1="655" x2="830" y2="560" stroke="#000000" stroke-width="1.8" marker-end="url(#arrow)" />
-  <text x="800" y="612" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="14" font-weight="bold" fill="#000000" text-anchor="end">资金</text>
-  <text x="860" y="612" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="14" font-weight="bold" fill="#000000" text-anchor="start">支持</text>
-
+  <text x="810" y="612" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="14" font-weight="bold" fill="#000000" text-anchor="end">资金</text>
+  <text x="850" y="612" font-family="'FangSong', 'STFangsong', 'SimSun', serif" font-size="14" font-weight="bold" fill="#000000" text-anchor="start">支持</text>
   <!-- 6. Bottom Node: 议题网络 (金融机构) (x=730, y=655, w=200, h=95) -->
   <g transform="translate(730, 655)">
     <rect width="200" height="95" rx="6" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
