@@ -5,10 +5,11 @@ import re
 from google import genai
 from google.genai import types
 
-WORKSPACE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", ".."))
+WORKSPACE_DIR = os.environ.get("WORKSPACE_DIR") or os.getcwd()
 SKILL_MD_PATH = os.path.join(os.path.dirname(__file__), "..", "SKILL.md")
-SOURCE_DIR = os.path.join(WORKSPACE_DIR, "source_images")
-OUTPUT_DIR = os.path.join(WORKSPACE_DIR, "svg_replications")
+SOURCE_DIR = os.environ.get("SOURCE_DIR") or os.path.join(WORKSPACE_DIR, "source_images")
+OUTPUT_DIR = os.environ.get("OUTPUT_DIR") or os.path.join(WORKSPACE_DIR, "svg_replications")
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def load_skill_prompt():
     with open(SKILL_MD_PATH, 'r', encoding='utf-8') as f:

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-label="paper-mechanigraph-4ss">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="title-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="card-border" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity=".5"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity=".2"/>
+    </linearGradient>
+    <linearGradient id="progress-bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="35%" stop-color="#818cf8"/>
+      <stop offset="70%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+    <radialGradient id="orb-right" cx="85%" cy="35%" r="48%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity=".22"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb-left" cx="15%" cy="85%" r="42%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity=".20"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="32"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="420" rx="32" fill="url(#bg)"/>
+  <rect width="1280" height="420" rx="32" fill="url(#orb-right)"/>
+  <rect width="1280" height="420" rx="32" fill="url(#orb-left)"/>
+  <circle cx="1060" cy="80" r="130" fill="#818cf8" opacity=".12" filter="url(#soft)"/>
+  <circle cx="160" cy="360" r="120" fill="#38bdf8" opacity=".14" filter="url(#soft)"/>
+
+  <g stroke="#94a3b8" stroke-opacity=".06" stroke-width="1">
+    <path d="M80 0v420M160 0v420M240 0v420M320 0v420M400 0v420M480 0v420M560 0v420M640 0v420M720 0v420M800 0v420M880 0v420M960 0v420M1040 0v420M1120 0v420M1200 0v420"/>
+    <path d="M0 70h1280M0 140h1280M0 210h1280M0 280h1280M0 350h1280"/>
+  </g>
+
+  <text x="88" y="88" fill="#38bdf8" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" font-weight="700" letter-spacing="4">PAPER MASTER 4SS · MECHANIGRAPH</text>
+  <text x="88" y="166" fill="#f8fafc" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="54" font-weight="800">paper<tspan fill="url(#title-grad)">-mechanigraph-4ss</tspan></text>
+  <text x="88" y="216" fill="#cbd5e1" font-family="ui-sans-serif, system-ui, PingFang SC, Microsoft YaHei, sans-serif" font-size="21">纯矢量学术机制图引擎 · 8大经典拓扑与视觉自检闭环</text>
+
+  <g font-family="ui-sans-serif, system-ui, PingFang SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="600">
+    <rect x="88" y="248" width="112" height="34" rx="17" fill="#082f49" stroke="#0ea5e9" stroke-opacity=".7"/>
+    <circle cx="106" cy="265" r="4" fill="#38bdf8"/>
+    <text x="118" y="270" fill="#bae6fd">TOPOLOGY</text>
+
+    <rect x="210" y="248" width="124" height="34" rx="17" fill="#1e1b4b" stroke="#6366f1" stroke-opacity=".7"/>
+    <circle cx="228" cy="265" r="4" fill="#818cf8"/>
+    <text x="240" y="270" fill="#e0e7ff">VECTOR SVG</text>
+
+    <rect x="344" y="248" width="128" height="34" rx="17" fill="#2e1065" stroke="#a855f7" stroke-opacity=".7"/>
+    <circle cx="362" cy="265" r="4" fill="#c084fc"/>
+    <text x="374" y="270" fill="#f3e8ff">CHROME LOOP</text>
+
+    <rect x="482" y="248" width="118" height="34" rx="17" fill="#022c22" stroke="#10b981" stroke-opacity=".7"/>
+    <circle cx="500" cy="265" r="4" fill="#34d399"/>
+    <text x="512" y="270" fill="#a7f3d0">CSSCI / SSCI</text>
+  </g>
+
+  <g font-family="ui-sans-serif, system-ui, PingFang SC, Microsoft YaHei, sans-serif">
+    <text x="88" y="332" fill="#94a3b8" font-size="14" font-weight="500">实体提取 → 构型匹配 → 纯矢量出图 → 视觉闭环自检</text>
+    <rect x="88" y="348" width="536" height="12" rx="6" fill="#0f172a" stroke="#1e293b"/>
+    <rect x="88" y="348" width="536" height="12" rx="6" fill="url(#progress-bar)"/>
+  </g>
+
+  <g transform="translate(710 48)">
+    <rect width="480" height="324" rx="20" fill="#0b1322" fill-opacity=".94" stroke="url(#card-border)" stroke-width="1.5"/>
+    <circle cx="28" cy="26" r="5.5" fill="#ef4444" opacity=".8"/>
+    <circle cx="46" cy="26" r="5.5" fill="#eab308" opacity=".8"/>
+    <circle cx="64" cy="26" r="5.5" fill="#22c55e" opacity=".8"/>
+    <text x="86" y="30" fill="#64748b" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="600">mechanigraph.pipeline.json</text>
+
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" transform="translate(24 56)">
+      <text y="0" fill="#38bdf8">{"engine": <tspan fill="#f1f5f9">"paper-mechanigraph-4ss"</tspan>,</text>
+      <text y="24" fill="#38bdf8"> "standard": <tspan fill="#a7f3d0">"CSSCI/SSCI Publishing Quality"</tspan>,</text>
+      <text y="48" fill="#38bdf8"> "topologies": [</text>
+      <text y="70" fill="#cbd5e1">   "Pipeline", "Hierarchy", "Dual-System",</text>
+      <text y="92" fill="#cbd5e1">   "Network", "Loop", "Matrix", "Steps", "Gear"</text>
+      <text y="114" fill="#38bdf8"> ],</text>
+      <text y="138" fill="#38bdf8"> "invariants": {</text>
+      <text y="160" fill="#f472b6">   "color_mode": <tspan fill="#f1f5f9">"Strict Pure Black &amp; White"</tspan>,</text>
+      <text y="182" fill="#f472b6">   "fonts": <tspan fill="#f1f5f9">"HeiTi (Large) + Bold FangSong"</tspan>,</text>
+      <text y="204" fill="#f472b6">   "zero_title": <tspan fill="#a7f3d0">true</tspan>, "headless_verify": <tspan fill="#a7f3d0">true</tspan></text>
+      <text y="226" fill="#38bdf8"> },</text>
+      <text y="248" fill="#38bdf8"> "output": <tspan fill="#fcd34d">"paper-workspace/figures/mechanism-*.svg"</tspan>}</text>
+    </g>
+  </g>
+</svg>

@@ -26,7 +26,10 @@ def main():
     print("Starting layout extraction for all images...")
     client = genai.Client()
     
-    img_dir = r"C:\Users\YJY\Desktop\draw-mechanism\source_images"
+    if len(sys.argv) > 1:
+        img_dir = sys.argv[1]
+    else:
+        img_dir = os.environ.get("SOURCE_IMAGES_DIR") or os.path.join(os.getcwd(), "source_images")
     images = glob.glob(os.path.join(img_dir, "*.png")) + glob.glob(os.path.join(img_dir, "*.jpg"))
     
     if not images:
