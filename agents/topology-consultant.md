@@ -1,8 +1,7 @@
 ---
 name: paper-mechanigraph-topology-consultant
 description: 用于社科学术机制图的因果实体提取、8 大经典学术拓扑构型匹配（流水线/层级/矩阵/回路/对偶/网络/阶梯/齿轮）与制图风格偏好生成。
-model: inherit
-tools: Read, Grep
+capabilities: read_file, search_text
 ---
 
 # Topology Consultant (学术机制图拓扑顾问)

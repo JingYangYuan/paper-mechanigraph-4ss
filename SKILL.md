@@ -1,12 +1,14 @@
 ---
 name: paper-mechanigraph-4ss
 description: 社科学术机制图（理论机制图、分析框架图、演进模型、政策网络、治理体系）的纯矢量 SVG 自动化生成、复刻与自检修复引擎。按 CSSCI/SSCI 期刊出版标准，出图前主动询问用户制图风格偏好，将文字描述/理论假说解析为机制图，或复刻已有原图，出图后后台无头渲染 PNG 视觉自检直至完美。当用户需要生成学术机制图、把机制描述/理论假说转为图示、复刻或重绘某张机制图时使用。
-tools: Read, Write, Bash, Glob, Grep
-argument-hint: "[机制描述文字 / 理论假说] 或 [待复刻原图路径] [可选: 直接给出风格偏好]"
-user-invocable: true
+capabilities: read_file, write_file, run_shell, search_text
+args_hint: "[机制描述文字 / 理论假说] 或 [待复刻原图路径] [可选: 直接给出风格偏好]"
+invocable: true
 ---
 
 > **拆分版路径约定**：本包由 `paper-master-4ss/scripts/export_standalone.py` 从 `paper-master-4ss/modules/mechanigraph/` 自动导出，是可独立安装的运行版。包内相对路径（`agents/`、`phases/`、`references/`、`master/` 等）相对本包根目录解析；跨模块路径 `paper-master-4ss/modules/<x>/...` 相对同级安装的 `paper-master-4ss/` 总控包解析。请勿直接编辑本包：修改总控模块后重新导出。
+>
+> **宿主无关约定**：本包不预设宿主，也不在 frontmatter 声明 `tools`/`hooks`/`model` 等宿主专属键。启动时按 `references/runtime-adapter.md` §5 探测当前环境可用能力，再按通用能力名（`read_file`、`search_text`、`web_search`、`run_shell`、`spawn_agent` 等）执行；宿主样例见 `references/agent-software-adapters.md`（样例，非名单）。
 
 # 社科学术机制图纯矢量设计引擎 (Mechanigraph)
 
@@ -30,7 +32,7 @@ user-invocable: true
 
 ## 跨宿主通用能力调用约定
 
-本模块遵循 `references/runtime-adapter.md` 与 `references/agent-software-adapters.md` 的抽象层规范，在不同宿主（Claude Code、OpenCode、Codex、ZCode、OMP、Antigravity）中统一调用：
+本模块遵循 `references/runtime-adapter.md` 的宿主无关能力约定，按该文件 §5 探测结果在当前宿主中统一调用（宿主样例见 `references/agent-software-adapters.md`，非宿主名单）：
 - `ask_user`：向用户确认制图风格偏好（构型流派、外大边框样式、连线风格）；
 - `read_file` / `write_file`：读取理论输入、样例参考与写入最终 SVG / JSON 产物；
 - `run_shell`：调用 `scripts/render_svg.py` 驱动无头渲染器生成 PNG 用于视觉审查。
@@ -70,8 +72,8 @@ graph TD
 
 ### 1. 询问方式
 
-- **结构化交互宿主（Claude Code / OMP / Antigravity / ZCode）**：使用宿主提供的结构化问询工具（如 `AskUserQuestion`、`ask`、`ask_question`），单次提出 2~3 个问题，每题提供 2~3 个明确选项；
-- **纯文本宿主（Codex 等）**：在单轮对话中自然语言一次性列出上述问题并给出建议选项，避免多次往复追问；
+- **提供结构化问询的宿主（`ask_user` 可用）**：使用宿主的结构化问询能力，单次提出 2~3 个问题，每题提供 2~3 个明确选项（Claude Code 兼容层为 `AskUserQuestion`，样例映射见 `references/agent-software-adapters.md` §1）；
+- **没有结构化问询的宿主（`ask_user` 不可用）**：在单轮对话中自然语言一次性列出上述问题并给出建议选项，避免多次往复追问，并在 `paper-workspace/_logs/` 记录 `ask_user=能力缺失`；
 - **用户已给偏好时**：若用户指令中已明确指定构型或风格（例如“要实线外框”、“按双系统模型绘制”），跳过询问，直接采纳并在输出说明中复述。
 
 ### 2. 标准询问项
